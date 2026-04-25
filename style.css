@@ -568,6 +568,90 @@ nav.scrolled {
     transform: translateX(5px);
 }
 
+/* Power BI Section */
+.power-bi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
+}
+
+.pbi-card {
+    background: rgba(13, 17, 23, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.pbi-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.pbi-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.pbi-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.pbi-card:hover .pbi-img img {
+    transform: scale(1.05);
+}
+
+.pbi-info {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pbi-info h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #a78bfa; /* Soft Purple from sample */
+    font-weight: 600;
+}
+
+.pbi-info p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.pbi-btns {
+    margin-top: auto;
+}
+
+.pbi-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #7c3aed;
+    color: #c4b5fd;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.pbi-btn:hover {
+    background: rgba(124, 58, 237, 0.1);
+    color: white;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+}
+
 /* Back to Top */
 #backToTop {
     display: none;
